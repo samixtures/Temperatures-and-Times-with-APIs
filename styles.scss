@@ -1,0 +1,20 @@
+body {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    article:nth-child(1){
+        background-color: orange;
+    }
+    article:nth-child(2){
+        background-color: rgba(64, 217, 255, 0.397);
+    }
+    article:nth-child(3){
+        background-color: rgba(235, 70, 98, 0.562);
+    }
+}
+article {
+    height: 720px;
+    width: 720px;
+}

@@ -1,0 +1,29 @@
+body {
+  background-color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+}
+
+body article:nth-child(1) {
+  background-color: orange;
+}
+
+body article:nth-child(2) {
+  background-color: rgba(64, 217, 255, 0.397);
+}
+
+body article:nth-child(3) {
+  background-color: rgba(235, 70, 98, 0.562);
+}
+
+article {
+  height: 720px;
+  width: 720px;
+}
+/*# sourceMappingURL=styles.css.map */

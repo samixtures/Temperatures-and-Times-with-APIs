@@ -6,7 +6,7 @@ function(data1){
     let temp1 = Math.floor(data1.main.temp);
     let weather1 = data1.weather[0].description;
     $('.icon1').attr('src', icon1);
-    $('.temp1').append(temp1);
+    $('.temp1').append(temp1 + "° F");
     $('.weatherType1').append(weather1);
 });
 
@@ -18,7 +18,7 @@ function(data2){
     let temp2 = Math.floor(data2.main.temp);
     let weather2 = data2.weather[0].description;
     $('.icon2').attr('src', icon2);
-    $('.temp2').append(temp2);
+    $('.temp2').append(temp2 + "° F");
     $('.weatherType2').append(weather2);
 });
 
@@ -30,7 +30,7 @@ function(data3){
     let temp3 = Math.floor(data3.main.temp);
     let weather3 = data3.weather[0].description;
     $('.icon3').attr('src', icon3);
-    $('.temp3').append(temp3);
+    $('.temp3').append(temp3 + "° F");
     $('.weatherType3').append(weather3);
 });
 
