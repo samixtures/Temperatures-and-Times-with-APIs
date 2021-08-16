@@ -37,7 +37,7 @@ function(data3){
 
 //San Jose/Yorba Linda
 //San Jose Coordinates: lon: -121.895, lat: 37.3394
-$.getJSON("http://api.timezonedb.com/v2.1/get-time-zone?key=JZAAKBVNHMZM&format=json&by=position&lat=37.3394&lng=-121.895", 
+$.getJSON("https://api.timezonedb.com/v2.1/get-time-zone?key=JZAAKBVNHMZM&format=json&by=position&lat=37.3394&lng=-121.895", 
 function(timeData1){
 console.log(timeData1);
 let unix_timestamp = timeData1.timestamp - timeData1.gmtOffset;
@@ -63,7 +63,7 @@ $('.time1').append(formattedTime);
 
 //Lombard
 //Lombard: lon: -88.0078, lat: 41.88
-$.getJSON("http://api.timezonedb.com/v2.1/get-time-zone?key=JZAAKBVNHMZM&format=json&by=position&lat=41.88&lng=-88.0078", 
+$.getJSON("https://api.timezonedb.com/v2.1/get-time-zone?key=JZAAKBVNHMZM&format=json&by=position&lat=41.88&lng=-88.0078", 
 function(timeData2){
 console.log(timeData2);
 let unix_timestamp = timeData2.timestamp - timeData2.gmtOffset;
