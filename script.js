@@ -6,7 +6,7 @@ function(data1){
     let temp1 = Math.floor(data1.main.temp);
     let weather1 = data1.weather[0].description;
     $('.icon1').attr('src', icon1);
-    $('.temp1').append(temp1 + "° F");
+    $('.temp1').append(temp1 + "° F | "+weather1);
     $('.weatherType1').append(weather1);
 });
 
@@ -18,7 +18,7 @@ function(data2){
     let temp2 = Math.floor(data2.main.temp);
     let weather2 = data2.weather[0].description;
     $('.icon2').attr('src', icon2);
-    $('.temp2').append(temp2 + "° F");
+    $('.temp2').append(temp2 + "° F | "+weather2);
     $('.weatherType2').append(weather2);
 });
 
@@ -30,14 +30,14 @@ function(data3){
     let temp3 = Math.floor(data3.main.temp);
     let weather3 = data3.weather[0].description;
     $('.icon3').attr('src', icon3);
-    $('.temp3').append(temp3 + "° F");
+    $('.temp3').append(temp3 + "° F | "+weather3);
     $('.weatherType3').append(weather3);
 });
 
 
 //San Jose/Yorba Linda
 //San Jose Coordinates: lon: -121.895, lat: 37.3394
-$.getJSON("http://api.timezonedb.com/v2.1/get-time-zone?key=JZAAKBVNHMZM&format=json&by=position&lat=37.3394&lng=-121.895", 
+$.getJSON("https://api.timezonedb.com/v2.1/get-time-zone?key=JZAAKBVNHMZM&format=json&by=position&lat=37.3394&lng=-121.895", 
 function(timeData1){
 console.log(timeData1);
 let unix_timestamp = timeData1.timestamp - timeData1.gmtOffset;
@@ -63,7 +63,7 @@ $('.time1').append(formattedTime);
 
 //Lombard
 //Lombard: lon: -88.0078, lat: 41.88
-$.getJSON("http://api.timezonedb.com/v2.1/get-time-zone?key=JZAAKBVNHMZM&format=json&by=position&lat=41.88&lng=-88.0078", 
+$.getJSON("https://api.timezonedb.com/v2.1/get-time-zone?key=JZAAKBVNHMZM&format=json&by=position&lat=41.88&lng=-88.0078", 
 function(timeData2){
 console.log(timeData2);
 let unix_timestamp = timeData2.timestamp - timeData2.gmtOffset;

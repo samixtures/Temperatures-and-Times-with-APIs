@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: rgba(224, 178, 178, 0.356);
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7,11 +7,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-weight: bold;
+  margin-top: 40px;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 body article:nth-child(1) {
-  background-color: orange;
+  background-color: #ffda94;
 }
 
 body article:nth-child(2) {
@@ -23,7 +24,48 @@ body article:nth-child(3) {
 }
 
 article {
-  height: 720px;
-  width: 720px;
+  width: 20%;
+  height: 450px;
+  text-align: center;
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  line-height: 0.75cm;
+}
+
+article h1 {
+  text-align: left;
+  font-size: 50px;
+  line-height: 40pt;
+}
+
+article p {
+  font-size: 35px;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+article div {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 25px;
+}
+
+article img {
+  position: absolute;
+  size: 100px;
+  max-width: 100%;
+  height: auto;
+  top: 40px;
+}
+
+.footer {
+  text-align: left;
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/
+  height: 40px;
+  margin-left: 30px;
 }
 /*# sourceMappingURL=styles.css.map */
