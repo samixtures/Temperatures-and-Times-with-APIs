@@ -5,6 +5,11 @@ body {
     justify-content: center;
     margin-top: 40px;
     font-family: 'Lexend Deca', sans-serif;
+    @media(max-width:980px){
+        flex-direction: column;
+        font-size: 10%;
+        max-width: 100%;
+    }
     article:nth-child(1){
         background-color: rgb(255, 218, 148);
     }

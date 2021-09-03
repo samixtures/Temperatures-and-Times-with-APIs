@@ -11,6 +11,17 @@ body {
   font-family: 'Lexend Deca', sans-serif;
 }
 
+@media (max-width: 980px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 10%;
+    max-width: 100%;
+  }
+}
+
 body article:nth-child(1) {
   background-color: #ffda94;
 }

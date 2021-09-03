@@ -74,6 +74,7 @@ var hours = date.getHours();
 var minutes = "0" + date.getMinutes();
 var  intTemp;
 var stringTemp = "PM";
+hours+=2;
 if (hours >= 12)
     stringTemp = "PM";
     else if (hours == 24)
@@ -82,7 +83,6 @@ if (hours >= 13){
     temp = hours - 12;
     hours = temp;
 }
-hours+=2;
 var formattedTime = hours + ':' + minutes.substr(-2) + " " + stringTemp;
 console.log(formattedTime);
 $('.time2').append(formattedTime);
