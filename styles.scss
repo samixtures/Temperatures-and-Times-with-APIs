@@ -32,16 +32,16 @@ article {
   line-height: 0.75cm;
   h1 {
       text-align: left;
-      font-size: 50px;
+      font-size:65px;
       line-height: 40pt;
   }
   p {
-      font-size: 35px;
+      font-size: 55px;
       font-family: 'Big Shoulders Display', cursive;
   }
   div {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 25px;
+    font-size: 45px;
   }
   img {
     position:absolute; 
@@ -49,6 +49,7 @@ article {
     max-width: 100%;
     height: auto;
     top: 40px;
+    width: 70px;
   }
 }
 .footer {
